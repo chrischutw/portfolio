@@ -113,6 +113,19 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.8); }
+  body#work-bg {
+    background: url(../img/workbg.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#work-bg:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.3); }
 
 h1,
 h2,
@@ -183,6 +196,21 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/cloud.png);
+  animation: cloud 60s linear infinite; }
+
+@keyframes cloud {
+  0% {
+    background-position: 0px; }
+  100% {
+    background-position: 5440px; } }
 
 .projects {
   display: grid;
